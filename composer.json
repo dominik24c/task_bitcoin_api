@@ -1,0 +1,36 @@
+{
+    "name": "dominik24c/task_bitcoin_api",
+    "authors": [
+        {
+            "name": "Dominik Cupał",
+            "email": "dominik24c@gmailc.com"
+        }
+    ],
+    "description": "This get all transactions by bitcoin testnet address and return all values about 6 digits and save results in data/indexes.txt",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php ./public/index.php",
+        "test": "./vendor/bin/phpunit tests"
+    },
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-pcre": "*",
+        "ext-dom": "*",
+        "ext-pdo": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-xml": "*",
+        "ext-xmlwriter": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
